@@ -1,145 +1,350 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sora's Profile</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page - Sora</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-wifi"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>SORA</h1>
-								<h3>PORTFOLIO PAGE</h3>
-								<br>
-								<p>自分が作ったモノを載せています。<br>
-								よろしくお願いします。 <br>
-									詳しくは<a href="#Works">Works</a>をご覧ください。</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#AboutMe">About Me</a></li>
-								<li><a href="#Works">Works</a></li>
-								<li><a href="#Contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light mb-1">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+        </li>
+    </ul>
+</nav>
 
-				<!-- Main -->
-					<div id="main">
+<div class="container">
+    <section class="landing">
+        <div class="row vertical-center">
+            <div class="col-lg-8 text-left pb-5">
+                <h1 class="display-1">Sora Sekimoto</h1>
+                <p class="lead pl-2">Backend Engineer</p>
+            </div>
+            <div class="col-lg-4 text-center my-auto pb-5 rounded-circle"><img class="img-fluid rounded-circle"
+                                                                               src="images/icon.JPG"></div>
+        </div>
+    </section>
 
-						<!-- About Me -->
-							<article id="AboutMe">
-								<h2 class="major">About Me</h2>
-								<span class="profile-image"><img src="images/icon.JPG" alt="" /></span>
-								<p>Name : Sora<br>
-									Age : 21<br>
-									Hobbies : Programming, Photography, Apple Products.<br>
-									Languages : English, Japanese, PHP (Laravel) , Python, Swift<br>
-									(I've mainly used PHP and Python.)<br>
-								</p>
-								<p>My Photo Instagram <a href="https://instagram.com/sora_sony" class="icon fa-instagram"><span class="label">Instagram</span></a></p>
-							</article>
+    <section class="mt-5 mb-5">
+        <h4 class="display-4">A little about me,</h4>
+        <div class="row">
+            <div class="col-lg-6 wrap text-left">
+                <div class="about-desc">
+                    <h1 class="bold-text">About</h1>
+                    <div class="pt-5">
+                        <h2 class="mb-5">Hello, World!</h2>
+                        <p>
+                            名前：関本 青空 ( Sora Sekimoto)<br>
+                            年齢：21歳<br>
+                            趣味：プログラミング、写真、Apple製品集め。<br>
+                        </p>
+                        <p>
+                            小学生の頃からゲームを通じ、プログラミングを学習し、自分で開発を行ってきました。<br>
+                            最近は、主にLaravelでWebアプリケーションの開発を行っております。<br>
+                            また、直近で開発しているサービスで必要になり、Flutterの勉強も始めました。<br>
+                        </p>
+                        <ul class="social-links list-unstyled mt-4">
+                            <li><a href="Mailto:sora0613.contact@gmail.com">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </a></li>
+                            <li><a href="https://github.com/Sora0613">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a></li>
+                            <li><a href="https://twitter.com/0613sora_">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wrap align-content-center">
+                <div class="row mt-5 flex-column">
+                    <div class="col-md-8">
+                        <h2 class="mb-4">My Skills</h2>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="progress-wrap">
+                            <h4>PHP</h4>
+                            <div class="progress progress-style">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="progress-wrap">
+                            <h4>Laravel</h4>
+                            <div class="progress progress-style">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="60"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="progress-wrap">
+                            <h4>HTML5/CSS</h4>
+                            <div class="progress progress-style">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
+                                     aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="interests pt-5 pb-5">
 
-						<!-- Works -->
-							<article id="Works">
-								<h2 class="major">Works</h2>
+        <h1 class="display-4">Tech I'm familiar with</h1>
+        <h1 class="bold-text bg-text">Tech Stack</h1>
 
-								<h3>ToDo List</h3>
-								<p>最もシンプルなToDoリストを目指しました。ごちゃごちゃとした煩わしい機能を排除して、簡単に使えるものとなっています。<br>
-								Laravelで開発を行いました。<br>
-								現在、サービスを停止しております。<br>
-								また、<a href="#ToDoList">こちら</a>のページで詳しく紹介もしております。</p>
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 640 512">
+                        <path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/>
+                    </svg>
+                    <h3>PHP</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 512 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M504.4 115.8a5.7 5.7 0 0 0 -.3-.7 8.5 8.5 0 0 0 -.5-1.3 6 6 0 0 0 -.5-.7 9.4 9.4 0 0 0 -.7-.9c-.2-.2-.5-.4-.8-.6a8.8 8.8 0 0 0 -.9-.7L404.4 55.6a8 8 0 0 0 -8 0L300.1 111h0a8.1 8.1 0 0 0 -.9 .7 7.7 7.7 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .2-.4 .5-.5 .7a9.7 9.7 0 0 0 -.5 1.3c-.1 .2-.2 .4-.3 .7a8.1 8.1 0 0 0 -.3 2.1V223.2l-80.2 46.2V63.4a7.8 7.8 0 0 0 -.3-2.1c-.1-.2-.2-.5-.3-.7a8.4 8.4 0 0 0 -.5-1.2c-.1-.3-.4-.5-.5-.7a9.4 9.4 0 0 0 -.7-.9 9.5 9.5 0 0 0 -.8-.6 9.8 9.8 0 0 0 -.9-.7h0L115.6 1.1a8 8 0 0 0 -8 0L11.3 56.5h0a6.5 6.5 0 0 0 -.9 .7 7.8 7.8 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .3-.4 .5-.6 .7a7.9 7.9 0 0 0 -.5 1.2 6.5 6.5 0 0 0 -.3 .7 8.2 8.2 0 0 0 -.3 2.1v329.7a8 8 0 0 0 4 7l192.5 110.8a8.8 8.8 0 0 0 1.3 .5c.2 .1 .4 .2 .6 .3a7.9 7.9 0 0 0 4.1 0c.2-.1 .4-.2 .6-.2a8.6 8.6 0 0 0 1.4-.6L404.4 400.1a8 8 0 0 0 4-7V287.9l92.2-53.1a8 8 0 0 0 4-7V117.9A8.6 8.6 0 0 0 504.4 115.8zM111.6 17.3h0l80.2 46.2-80.2 46.2L31.4 63.4zm88.3 60V278.6l-46.5 26.8-33.7 19.4V123.5l46.5-26.8zm0 412.8L23.4 388.5V77.3L57.1 96.7l46.5 26.8V338.7a6.9 6.9 0 0 0 .1 .9 8 8 0 0 0 .2 1.2h0a5.9 5.9 0 0 0 .4 .9 6.4 6.4 0 0 0 .4 1v0a8.5 8.5 0 0 0 .6 .8 7.6 7.6 0 0 0 .7 .8l0 0c.2 .2 .5 .4 .8 .6a8.9 8.9 0 0 0 .9 .7l0 0 0 0 92.2 52.2zm8-106.2-80.1-45.3 84.1-48.4 92.3-53.1 80.1 46.1-58.8 33.6zm184.5 4.6L215.9 490.1V397.8L346.6 323.2l45.8-26.2zm0-119.1L358.7 250l-46.5-26.8V131.8l33.7 19.4L392.4 178zm8-105.3-80.2-46.2 80.2-46.2 80.2 46.2zm8 105.3V178L455 151.2l33.7-19.4v91.4h0z"/>
+                    </svg>
+                    <h3>Laravel</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 640 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/>
+                    </svg>
+                    <h3>Docker</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 384 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
+                    </svg>
+                    <h3>HTML5</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 384 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
+                    </svg>
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/>
+                    </svg>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 496 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 mt-4">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>
+                    </svg>
+                    <h3>Python</h3>
+                </div>
+            </div>
+        </div>
 
-								<h3>Laravel Share Playlists</h3>
-								<p>使っている音楽プラットフォームに依存しないプレイリストの作成が可能になるため、共有がしやすくなります。<br>
-								また、Spotifyからプレイリストをインポートすることもできます。<br>
-								<a href="https://github.com/Sora0613/Laravel-Share-Playlists">Code on GitHub</a></p>
+    </section>
+    <section>
+        <h1 class="display-4 mt-5">Profile</h1>
+        <h1 class="bold-text bg-text">Experience</h1>
+        <div class="row d-flex">
+            <div class="col-md-10">
+                <h4 class="dmb-4 mt-2 profile-text">
+                    I'm a Backend Engineer from Osaka.
+                </h4>
 
-								<h3>LiveChat</h3>
-								<p>Laravelとajaxを使用して、非同期処理でチャットを行うwebアプリです。<br>
-								<a href="https://github.com/Sora0613/LiveChat">Code on GitHub</a></p>
-								
-								<h3>PyGTasks</h3>
-								<p>Google Tasksのタスクをデスクトップ上から管理することができるアプリ。<br>
-								<a href="https://github.com/Sora0613/PyGTasks">Code on GitHub</a></p>
-								
-								<h3>PDF Merger</h3>
-								<p>複数のPDFを一つのPDFにまとめてくれます。<br>
-								<a href="https://github.com/Sora0613/PDFMerger">Code on GitHub</a></p>
-								
-								<h3>Discord Message Deleted Recorder</h3>
-								<p>DiscordのBot用のコードです。
-								人が削除したメッセージを見れるようにしてくれます。<br>
-								<a href="https://github.com/Sora0613/DiscordMessageDeletedRecorder">Code on GitHub</a></p>
-							</article>
+                <div class="mt-3">
+                    <div class="py-4">
+                        <div class="desc">
+                            <h4>関西外国語大学 外国語学部 英米語学科</h4>
+                            <p>在学中（2025年3月 卒業見込み）</p>
+                        </div>
+                        <div>
+                            <p>2021.04 - 2025.03</p>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Contact -->
-							<article id="Contact">
-								<h2 class="major">Contact</h2>
-								<ul class="icons">
-									<li><a href="mailto:sora0613.contact@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a><p>Email : sora0613.contact@gmail.com</p></li>
-								</ul>
-							</article>
+                <h1 class="display-4 mt-5">Works</h1>
+                <h1 class="bold-text bg-text">Services</h1>
 
-						　<!-- ToDo List -->
-							<article id="ToDoList">
-								<h2 class="major">About ToDO List</h2>
-								<p>ユーザーごとにデータベースにタスクを保存し、完了と未完了を管理しています。<br>
-								それぞれのタスクはボタンひとつで削除、完了、そして未完了に戻すことが可能です。<br></p>
-								<p>トップ画面</p>
-								<span class="image main"><img src="images/todo/todo-top.png" alt="" /></span>
-								<p>登録画面</p>
-								<span class="image main"><img src="images/todo/todo-register.png" alt="" /></span>
-								<p>ログイン画面</p>
-								<span class="image main"><img src="images/todo/todo-login.png" alt="" /></span>
-								<p>タスク管理画面</p>
-								<span class="image main"><img src="images/todo/todo-list.png" alt="" /></span>
-								<p>プロフィール変更画面（アイコンと名前の変更が可能)</p>
-								<span class="image main"><img src="images/todo/todo-profile.png" alt="" /></span>
-								<p>変更後の画像</p>
-								<span class="image main"><img src="images/todo/todo-profile-edited.png" alt="" /></span>
-							</article>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>Smart Pantry</h4>
+                        <p>現在開発中</p>
+                        <p>
+                            家にある調味料や野菜、その他食料品の在庫の管理や、買い物リストの作成、共有ができるアプリケーションです。<br>
+                            JANコードから商品を検索したり、在庫のリストを他のユーザーとURLもしくはメールアドレスで簡単に共有することができます。<br>
+                            WebはLaravelで、モバイルアプリはFlutterで開発を行っています。<br>
+                        </p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/InventoryController">Code(Laravel) on GitHub</a></p>
+                        <p><a href="https://github.com/Sora0613/FlutterPractice">Code(Flutter) on GitHub</a></p>
+                    </div>
+                </div>
 
-					</div>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>QBox</h4>
+                        <p>現在開発中</p>
+                        <p>匿名で質問を送ることができるアプリケーション。<br>
+                            AIを使い、悪意のあるワードを含む質問を自動でフィルタリングする機能を搭載する予定<br>
+                            Tailwindを使ってフロントの開発を試みております。</p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/QBox">Code on GitHub</a></p>
+                    </div>
+                </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Sora. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						<br>
-						<ul class="icons">
-							<li><a href="https://github.com/Sora0613" class="icon fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>ToDo List</h4>
+                        <p>最もシンプルなToDoリストを目指しました。ごちゃごちゃとした煩わしい機能を排除して、簡単に使えるものとなっています。<br>
+                            Laravelで開発を行いました。<br>
+                            現在、サービスを停止しております。<br>
+                            サービスのスクリーンショットは下記リンクから見れます。
+                        </p>
+                    </div>
+                    <div>
+                        <p><a href="todo_img.html">こちら</a></p>
+                    </div>
+                </div>
 
-					</footer>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>Share Playlists</h4>
+                        <p>
+                            使っている音楽プラットフォームに依存しないプレイリストの作成が可能になるため、共有がしやすくなります。<br>
+                            また、Spotifyからプレイリストをインポートすることもできます。<br>
+                            GitHubのリポジトリからデモのスクリーンショットを見ることができます。
+                        </p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/Laravel-Share-Playlists">Code on GitHub</a></p>
+                    </div>
+                </div>
 
-			</div>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>Live Chat</h4>
+                        <p>Laravelとajaxを使用して、非同期処理でチャットを行うwebアプリです。</p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/LiveChat">Code on GitHub</a></p>
+                    </div>
+                </div>
 
-		<!-- BG -->
-			<div id="bg"></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>PyGtasks</h4>
+                        <p>Google Tasksのタスクをデスクトップ上から管理することができるアプリ。</p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/PyGTasks">Code on GitHub</a></p>
+                    </div>
+                </div>
 
-	</body>
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>PDF Merger</h4>
+                        <p>複数のPDFを一つのPDFにまとめてくれます。</p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/PDFMerger">Code on GitHub</a></p>
+                    </div>
+                </div>
+
+                <div class="py-4">
+                    <div class="desc">
+                        <h4>Discord Message Delete Recorder</h4>
+                        <p>DiscordのBotのコード。Pythonで書かれています。</p>
+                    </div>
+                    <div>
+                        <p><a href="https://github.com/Sora0613/DiscordMessageDeletedRecorder">Code on GitHub</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="display-4 mt-5">Contact</h1>
+        <h1 class="bold-text bg-text">GET IN TOUCH WITH ME</h1>
+        <div class="text-left">
+            <div class="pt-5">
+                <h2 class="mb-5">ご連絡は、下記サービスからお願いします。</h2>
+                <ul class="social-links list-unstyled mt-4">
+                    <li><a href="Mailto:sora0613.contact@gmail.com">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a></li>
+                    <li><a href="https://github.com/Sora0613">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a></li>
+                    <li><a href="https://twitter.com/0613sora_">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-5 mb-5 text-center">
+            <p>© 2024 Kartik Choudhary
+                Released under the
+                <a href="https://github.com/YukinobuKurata/YouTubeMagicBuyButton/blob/master/MIT-LICENSE.txt">MIT
+                    LICENSE</a></p>
+        </div>
+    </section>
+</div>
+
+<!-- Made by Kartik Choudhary <3 -->
+<!-- You can remove the credits if you want lol, but I'd appreciate attribution :) -->
+
+<!-- Scripts -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+</body>
+
 </html>
