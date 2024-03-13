@@ -215,3 +215,9 @@ body {
 .blog-entry .meta > div a {
     font-size: 15px;
     color: #8c8c8c; }
+/* 追加 最初の画面で名前が見切れていたので修正。 */
+@media only screen and (max-width: 576px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+}
