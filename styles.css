@@ -250,8 +250,3 @@ body {
     font-size: 15px;
     color: #8c8c8c;
 }
-
-/* 追加 最初の画面で名前が見切れていたので修正。 */
-.display-1 {
-    font-size: 3.5vw;
-}
