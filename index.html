@@ -1,386 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-5343131174744212">
-    <title>Portfolio Page - Sora</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Sora - Backend Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<nav class="navbar navbar-expand-sm navbar-light mb-1">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-        </li>
-    </ul>
-</nav>
+<header>
+    <nav class="container">
+        <a href="#" class="logo"><i class="fa fa-pizza-slice"></i></a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education-experience">Education & Experience</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+</header>
 
-<div class="container">
-    <section class="landing">
-        <div class="row vertical-center">
-            <div class="col-lg-8 text-left pb-5">
-                <h1 class="display-3">Sora Sekimoto</h1>
-                <p class="lead pl-2">Web App Engineer
-                ( Mainly Backend )</p>
-            </div>
-            <div class="col-lg-4 text-center my-auto pb-5 rounded-circle"><img class="img-fluid rounded-circle"
-                                                                               src="images/icon.jpeg"></div>
+<main class="container">
+    <section class="hero">
+        <img class="icon" src="https://avatars.githubusercontent.com/u/28401023?v=4" alt="Sora">
+        <h1>Sora</h1>
+        <h2>Backend Engineer</h2>
+        <p>主にGo, PHP, TypeScriptを使ってWebアプリケーションを開発しています。</p>
+        <div class="social-links">
+            <a href="https://github.com/Sora0613" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:sora0613.contact@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </section>
 
-    <section class="mt-5 mb-5">
-        <h4 class="display-4">A little about me,</h4>
-        <div class="row">
-            <div class="col-lg-6 wrap text-left">
-                <div class="about-desc">
-                    <h1 class="bold-text">About</h1>
-                    <div class="pt-5">
-                        <h2 class="mb-5">Hello, World!</h2>
-                        <p>
-                            名前：関本 青空 ( Sora Sekimoto )<br>
-                            年齢：21歳<br>
-                            趣味：プログラミング、写真、Apple製品。<br>
-                        </p>
-                        <p>
-                            小学生の頃からゲームを通じ、プログラミングを学習し、自分で開発を行ってきました。<br>
-                            最近は、主にLaravel,GoでWebアプリケーションの開発を行っております。<br>
-                            また、最近フロントエンドの勉強としてReactと、iOSアプリケーション対応のためのFlutterの勉強も始めました。<br>
-                        </p>
-                        <ul class="social-links list-unstyled mt-4">
-                            <li><a href="Mailto:sora0613.contact@gmail.com">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </a></li>
-                            <li><a href="https://github.com/Sora0613">
-                                <ion-icon name="logo-github"></ion-icon>
-                            </a></li>
-                            <li><a href="https://twitter.com/0613sora_">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div>
+                <p>小学生の頃からプログラミングに興味を持ち、現在はバックエンドをメインとしてWebアプリケーションの開発を行なっています。</p>
+                <p>現在は、GoとTypeScriptを使い、SmartPantryという家庭用食材管理アプリケーションの開発を行なっています。</p>
+                <p>スマートフォン向けのアプリケーション開発にも興味があります。</p>
             </div>
-            <div class="col-lg-6 wrap align-content-center">
-                <div class="row mt-5 flex-column">
-                    <div class="col-md-8">
-                        <h2 class="mb-4">My Skills</h2>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="progress-wrap">
-                            <h4>PHP</h4>
-                            <div class="progress progress-style">
-                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="progress-wrap">
-                            <h4>Laravel</h4>
-                            <div class="progress progress-style">
-                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="60"
-                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="progress-wrap">
-                            <h4>Go</h4>
-                            <div class="progress progress-style">
-                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-                                     aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-3">
-                        <div class="progress-wrap">
-                            <h4>HTML, CSS</h4>
-                            <div class="progress progress-style">
-                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-                                     aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+                <h3>Tech Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                    <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
+                    <span class="tech-tag"><i class="fab fa-golang"></i> Go</span>
+                    <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="tech-tag"><i class="fa fa-database"></i> MySQL</span>
+                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
+                    <span class="tech-tag"><i class="fab fa-css3"></i> CSS</span>
+                    <span class="tech-tag"><i class="fab fa-typescript"></i> TypeScript</span>
+                    <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                    <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                    <span class="tech-tag"><i class="fab fa-git"></i> Git</span>
+                    <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
+                    <span class="tech-tag">( <i class="fa fa-language"></i> English )</span>
                 </div>
             </div>
         </div>
     </section>
-    <section class="interests pt-5 pb-5">
 
-        <h1 class="display-4">Tech I'm familiar with</h1>
-        <h1 class="bold-text bg-text">Tech Stack</h1>
-
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 640 512">
-                        <path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/>
-                    </svg>
-                    <h3>PHP</h3>
+    <section id="education-experience">
+        <h2>Education & Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2025 - </div>
+                <div class="timeline-content">
+                    <h3>Web App Engineer</h3>
+                    <p>Tokyo, Japan</p>
+                    <ul>
+                        <li>???</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 512 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M504.4 115.8a5.7 5.7 0 0 0 -.3-.7 8.5 8.5 0 0 0 -.5-1.3 6 6 0 0 0 -.5-.7 9.4 9.4 0 0 0 -.7-.9c-.2-.2-.5-.4-.8-.6a8.8 8.8 0 0 0 -.9-.7L404.4 55.6a8 8 0 0 0 -8 0L300.1 111h0a8.1 8.1 0 0 0 -.9 .7 7.7 7.7 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .2-.4 .5-.5 .7a9.7 9.7 0 0 0 -.5 1.3c-.1 .2-.2 .4-.3 .7a8.1 8.1 0 0 0 -.3 2.1V223.2l-80.2 46.2V63.4a7.8 7.8 0 0 0 -.3-2.1c-.1-.2-.2-.5-.3-.7a8.4 8.4 0 0 0 -.5-1.2c-.1-.3-.4-.5-.5-.7a9.4 9.4 0 0 0 -.7-.9 9.5 9.5 0 0 0 -.8-.6 9.8 9.8 0 0 0 -.9-.7h0L115.6 1.1a8 8 0 0 0 -8 0L11.3 56.5h0a6.5 6.5 0 0 0 -.9 .7 7.8 7.8 0 0 0 -.8 .6 8.2 8.2 0 0 0 -.7 .9c-.2 .3-.4 .5-.6 .7a7.9 7.9 0 0 0 -.5 1.2 6.5 6.5 0 0 0 -.3 .7 8.2 8.2 0 0 0 -.3 2.1v329.7a8 8 0 0 0 4 7l192.5 110.8a8.8 8.8 0 0 0 1.3 .5c.2 .1 .4 .2 .6 .3a7.9 7.9 0 0 0 4.1 0c.2-.1 .4-.2 .6-.2a8.6 8.6 0 0 0 1.4-.6L404.4 400.1a8 8 0 0 0 4-7V287.9l92.2-53.1a8 8 0 0 0 4-7V117.9A8.6 8.6 0 0 0 504.4 115.8zM111.6 17.3h0l80.2 46.2-80.2 46.2L31.4 63.4zm88.3 60V278.6l-46.5 26.8-33.7 19.4V123.5l46.5-26.8zm0 412.8L23.4 388.5V77.3L57.1 96.7l46.5 26.8V338.7a6.9 6.9 0 0 0 .1 .9 8 8 0 0 0 .2 1.2h0a5.9 5.9 0 0 0 .4 .9 6.4 6.4 0 0 0 .4 1v0a8.5 8.5 0 0 0 .6 .8 7.6 7.6 0 0 0 .7 .8l0 0c.2 .2 .5 .4 .8 .6a8.9 8.9 0 0 0 .9 .7l0 0 0 0 92.2 52.2zm8-106.2-80.1-45.3 84.1-48.4 92.3-53.1 80.1 46.1-58.8 33.6zm184.5 4.6L215.9 490.1V397.8L346.6 323.2l45.8-26.2zm0-119.1L358.7 250l-46.5-26.8V131.8l33.7 19.4L392.4 178zm8-105.3-80.2-46.2 80.2-46.2 80.2 46.2zm8 105.3V178L455 151.2l33.7-19.4v91.4h0z"/>
-                    </svg>
-                    <h3>Laravel</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 640 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/>
-                    </svg>
-                    <h3>Docker</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 384 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/>
-                    </svg>
-                    <h3>HTML5</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 384 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/>
-                    </svg>
-                    <h3>CSS</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/>
-                    </svg>
-                    <h3>SQL</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 496 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                    </svg>
-                    <h3>GitHub</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>
-                    </svg>
-                    <h3>Python</h3>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 640 512">
-                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path d="M400.1 194.8C389.2 197.6 380.2 199.1 371 202.4C363.7 204.3 356.3 206.3 347.8 208.5L347.2 208.6C343 209.8 342.6 209.9 338.7 205.4C334 200.1 330.6 196.7 324.1 193.5C304.4 183.9 285.4 186.7 267.7 198.2C246.5 211.9 235.6 232.2 235.9 257.4C236.2 282.4 253.3 302.9 277.1 306.3C299.1 309.1 316.9 301.7 330.9 285.8C333 283.2 334.9 280.5 337 277.5V277.5L337 277.5C337.8 276.5 338.5 275.4 339.3 274.2H279.2C272.7 274.2 271.1 270.2 273.3 264.9C277.3 255.2 284.8 239 289.2 230.9C290.1 229.1 292.3 225.1 296.1 225.1H397.2C401.7 211.7 409 198.2 418.8 185.4C441.5 155.5 468.1 139.9 506 133.4C537.8 127.8 567.7 130.9 594.9 149.3C619.5 166.1 634.7 188.9 638.8 218.8C644.1 260.9 631.9 295.1 602.1 324.4C582.4 345.3 557.2 358.4 528.2 364.3C522.6 365.3 517.1 365.8 511.7 366.3C508.8 366.5 506 366.8 503.2 367.1C474.9 366.5 449 358.4 427.2 339.7C411.9 326.4 401.3 310.1 396.1 291.2C392.4 298.5 388.1 305.6 382.1 312.3C360.5 341.9 331.2 360.3 294.2 365.2C263.6 369.3 235.3 363.4 210.3 344.7C187.3 327.2 174.2 304.2 170.8 275.5C166.7 241.5 176.7 210.1 197.2 184.2C219.4 155.2 248.7 136.8 284.5 130.3C313.8 124.1 341.8 128.4 367.1 145.6C383.6 156.5 395.4 171.4 403.2 189.5C405.1 192.3 403.8 193.9 400.1 194.8zM48.3 200.4C47.1 200.4 46.7 199.8 47.4 198.8L53.9 190.4C54.5 189.5 56.1 188.9 57.3 188.9H168.6C169.8 188.9 170.1 189.8 169.5 190.7L164.2 198.8C163.6 199.8 162 200.7 161.1 200.7L48.3 200.4zM1.2 229.1C0 229.1-.3 228.4 .3 227.5L6.9 219.1C7.5 218.2 9 217.5 10.3 217.5H152.4C153.6 217.5 154.2 218.5 153.9 219.4L151.4 226.9C151.1 228.1 149.9 228.8 148.6 228.8L1.2 229.1zM75.7 255.9C75.1 256.8 75.4 257.7 76.7 257.7L144.6 258C145.5 258 146.8 257.1 146.8 255.9L147.4 248.4C147.4 247.1 146.8 246.2 145.5 246.2H83.2C82 246.2 80.7 247.1 80.1 248.1L75.7 255.9zM577.2 237.9C577 235.3 576.9 233.1 576.5 230.9C570.9 200.1 542.5 182.6 512.9 189.5C483.9 196 465.2 214.4 458.4 243.7C452.8 268 464.6 292.6 487 302.6C504.2 310.1 521.3 309.2 537.8 300.7C562.4 287.1 575.8 268 577.4 241.2C577.3 240 577.3 238.9 577.2 237.9z"/>
-                    </svg>
-                    <h3>Go</h3>
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2025</div>
+                <div class="timeline-content">
+                    <h3>University Student</h3>
+                    <p>Kansaigaidai University, Osaka, Japan</p>
+                    <ul>
+                        <li>家庭のフードロス対策となる在庫チェックアプリ開発をLaravelで開発</li>
+                        <li>上記アプリをGoとReactでリファクタリングを行う</li>
+                        <li>英語の学習を通じて、国際的な使ったコミュニケーション能力を向上</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <h1 class="display-4 mt-5">Profile</h1>
-        <h1 class="bold-text bg-text">Experience</h1>
-        <div class="row d-flex">
-            <div class="col-md-10">
-                <h4 class="dmb-4 mt-2 profile-text">
-                    I'm a Backend Engineer from Osaka.
-                </h4>
 
-                <div class="mt-3">
-                    <div class="py-4">
-                        <div class="desc">
-                            <h4>関西外国語大学 外国語学部 英米語学科</h4>
-                            <p>在学中（2025年3月 卒業見込み）</p>
-                        </div>
-                        <div>
-                            <p>2021.04 - 2025.03</p>
-                        </div>
-                    </div>
+    <section id="works">
+        <h2>Works</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Smart Pantry ( Refactoring ) </h3>
+                <p>家庭用食材在庫管理アプリをGoとReactで作成しています。</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Nginx</span>
                 </div>
-
-                <h1 class="display-4 mt-5">Works</h1>
-                <h1 class="bold-text bg-text">Services</h1>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Smart Pantry</h4>
-                        <p><a href="https://smart-pantry.sora0613.com/">こちら</a>からアクセスして使うことが可能です。
-                        </p>
-                        <p>
-                            家にある調味料や野菜、その他食料品の在庫の管理や、買い物リストの作成、共有ができるアプリケーションです。<br>
-                            JANコードから商品を検索したり、在庫のリストを他のユーザーとURLもしくはメールアドレスで簡単に共有することができます。<br>
-                            WebはLaravelで、モバイルアプリはFlutterで開発を行っています。<br>
-                            2024/05/10追記<br>
-                            現在、フロントエンドをReact、バックエンドをGoでよりモダンかつ多くの情報を処理できるようにリファクタリングを行なっております。<br>
-                            それにともない、まずはWeb版からデザインも一新します。Flutterで作成しているモバイル版の方も順次AppStore等でリリースの予定です。
-                        </p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/InventoryController">Code(Laravel) on GitHub</a></p>
-                        <p><a href="https://github.com/Sora0613/FlutterPractice">Code(Flutter) on GitHub</a></p>
-                    </div>
+            </div>
+            <div class="project-card">
+                <h3>Smart Pantry</h3>
+                <p>家庭用食材在庫管理アプリをLaravelで作成ました。</p>
+                <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Nginx</span>
+                    <span class="tech-tag">Docker</span>
                 </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Weather News</h4>
-                        <p><a href="https://sora-weather-news.vercel.app/">こちら</a>からアクセスが可能です。
-                        </p>
-                        <p>
-                            Reactの学習のために作成しました。
-                        </p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/ReactWeatherNews">Code on GitHub</a></p>
-                    </div>
+            </div>
+            <div class="project-card">
+                <h3>Share Playlists</h3>
+                <p>音楽プラットフォームによらないプレイリストが作成できます。</p>
+                <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Nginx</span>
+                    <span class="tech-tag">Docker</span>
                 </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>QBox</h4>
-                        <p>現在開発中</p>
-                        <p>匿名で質問を送ることができるアプリケーション。<br>
-                            AIを使い、悪意のあるワードを含む質問を自動でフィルタリングする機能を搭載する予定<br>
-                            Tailwindを使ってフロントの開発を試みております。</p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/QBox">Code on GitHub</a></p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>ToDo List</h4>
-                        <p>最もシンプルなToDoリストを目指しました。ごちゃごちゃとした煩わしい機能を排除して、簡単に使えるものとなっています。<br>
-                            Laravelで開発を行いました。<br>
-                            現在、サービスを停止しております。<br>
-                            サービスのスクリーンショットは下記リンクから見れます。
-                        </p>
-                    </div>
-                    <div>
-                        <p><a href="todo_img.html">こちら</a></p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Share Playlists</h4>
-                        <p>
-                            使っている音楽プラットフォームに依存しないプレイリストの作成が可能になるため、共有がしやすくなります。<br>
-                            また、Spotifyからプレイリストをインポートすることもできます。<br>
-                            GitHubのリポジトリからデモのスクリーンショットを見ることができます。
-                        </p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/Laravel-Share-Playlists">Code on GitHub</a></p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Live Chat</h4>
-                        <p>Laravelとajaxを使用して、非同期処理でチャットを行うwebアプリです。</p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/LiveChat">Code on GitHub</a></p>
-                    </div>
-                </div>
-
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>PyGtasks</h4>
-                        <p>Google Tasksのタスクをデスクトップ上から管理することができるアプリ。</p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/PyGTasks">Code on GitHub</a></p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>PDF Merger</h4>
-                        <p>複数のPDFを一つのPDFにまとめてくれます。</p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/PDFMerger">Code on GitHub</a></p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Discord Message Delete Recorder</h4>
-                        <p>DiscordのBotのコード。Pythonで書かれています。</p>
-                    </div>
-                    <div>
-                        <p><a href="https://github.com/Sora0613/DiscordMessageDeletedRecorder">Code on GitHub</a></p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-    <section>
-        <h1 class="display-4 mt-5">Contact</h1>
-        <h1 class="bold-text bg-text">GET IN TOUCH WITH ME</h1>
-        <div class="text-left">
-            <div class="pt-5">
-                <h2 class="mb-5">ご連絡は、下記サービスからお願いします。</h2>
-                <ul class="social-links list-unstyled mt-4">
-                    <li><a href="Mailto:contact@sora0613.com">
-                        <ion-icon name="mail-outline"></ion-icon>
-                    </a></li>
-                    <li><a href="https://github.com/Sora0613">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a></li>
-                    <li><a href="https://twitter.com/0613sora_">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-5 mb-5 text-center">
-            <p>© 2024 Kartik Choudhary
-                Released under the <a href="https://github.com/kartikcho/dark-portfolio-template/blob/master/LICENSE">MIT LICENSE</a></p>
-        </div>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>案件のご依頼や相談等、お気軽にご連絡ください。</p>
+        <a href="mailto:sora0613.contact@gmail.com" class="btn">Contact Me</a>
     </section>
-</div>
+</main>
 
-<!-- Made by Kartik Choudhary <3 -->
-<!-- You can remove the credits if you want lol, but I'd appreciate attribution :) -->
+<footer>
+    <p>&copy; 2024 Sora. All rights reserved.</p>
+</footer>
 
-<!-- Scripts -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-</script>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
