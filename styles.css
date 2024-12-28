@@ -85,6 +85,16 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
+a {
+    color: inherit; /* 親要素のテキストカラーを引き継ぐ */
+    text-decoration: underline; /* 下線を表示 */
+}
+
+a:hover {
+    color: var(--accent-color); /* ホバー時にアクセントカラーを使用 */
+}
+
+
 .hero {
     text-align: center;
     margin-bottom: 60px;
