@@ -4,77 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sora - Backend Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-iw3OoTErCYJJB9mCa8LNS2hbsQ7M3C0EpIsO/H5+EGAkPGc6rk+V8i04oW/K5xq0" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <nav class="container">
-        <a href="#" class="logo"><i class="fa fa-pizza-slice"></i></a>
+        <a href="#top" class="logo">S.</a>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#education-experience">Education & Experience</a></li>
+            <li><a href="#education-experience">Experience</a></li>
             <li><a href="#works">Works</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button id="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
+            <i class="far fa-moon"></i>
         </button>
     </nav>
 </header>
 
 <main class="container">
-    <section class="hero">
-        <img class="icon" src="https://avatars.githubusercontent.com/u/28401023?v=4" alt="Sora">
-        <h1>Sora</h1>
-        <h2>Backend Engineer</h2>
-        <p>主にGo, PHP, TypeScriptを使ってWebアプリケーションを開発しています。</p>
-        <div class="social-links">
+    <section class="hero" id="top">
+        <p class="hero-eyebrow fade-in" style="animation-delay: 0s">Backend Engineer</p>
+        <h1 class="fade-in" style="animation-delay: 0.08s">Sora</h1>
+        <p class="hero-tagline fade-in" style="animation-delay: 0.16s">主にGo, PHP, TypeScriptを使ってWebアプリケーションを開発しています。</p>
+        <div class="social-links fade-in" style="animation-delay: 0.24s">
             <a href="https://github.com/Sora0613" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:sora0613.contact@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:sora0613.contact@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
         </div>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
+        <div class="section-header">
+            <span class="section-index">01</span>
+            <h2>About</h2>
+        </div>
         <div class="about-content">
-            <div>
-                <p>小学生の頃からプログラミングに興味を持ち、現在はバックエンドをメインとしてWebアプリケーションの開発を行なっています。</p>
-                <p>現在は、GoとTypeScriptを使い、SmartPantryという家庭用食材管理アプリケーションの開発を行なっています。</p>
+            <div class="about-text">
+                <p>小学生の頃からプログラミングに興味を持ち、現在はWebアプリケーションの開発に携わっています。</p>
+                <p>現職ではフルスタックエンジニアとして、主にPHPを用いたWebアプリケーションの設計・開発を担当しています。</p>
+                <p>個人開発では、GoやTypeScript、React、AWSやDockerなどのインフラ技術にも触れながら、実務で扱う機会の少ない技術領域の探求を続けています。</p>
                 <p>スマートフォン向けのアプリケーション開発にも興味があります。</p>
             </div>
             <div>
-                <h3>Tech Stack</h3>
-                <div class="tech-stack">
-                    <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
-                    <span class="tech-tag"><i class="fab fa-laravel"></i> Laravel</span>
-                    <span class="tech-tag"><i class="fab fa-golang"></i> Go</span>
-                    <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
-                    <span class="tech-tag"><i class="fa fa-database"></i> MySQL</span>
-                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
-                    <span class="tech-tag"><i class="fab fa-css3"></i> CSS</span>
-                    <span class="tech-tag"><i class="fab fa-typescript"></i> TypeScript</span>
-                    <span class="tech-tag"><i class="fab fa-react"></i> React</span>
-                    <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
-                    <span class="tech-tag"><i class="fab fa-git"></i> Git</span>
-                    <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
-                    <span class="tech-tag">( <i class="fa fa-language"></i> English )</span>
+                <div class="tech-group">
+                    <h3>Programming & Frameworks</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+                <div class="tech-group">
+                    <h3>Infrastructure & DevOps</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">On-premise</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag">CI / CD</span>
+                    </div>
+                </div>
+                <div class="tech-group">
+                    <h3>Database & Tools</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="tech-group">
+                    <h3>Language</h3>
+                    <div class="tech-stack">
+                        <span class="tech-tag">English</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="education-experience">
-        <h2>Education & Experience</h2>
+        <div class="section-header">
+            <span class="section-index">02</span>
+            <h2>Experience & Education</h2>
+        </div>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">2025 - </div>
+                <div class="timeline-date">2025 —</div>
                 <div class="timeline-content">
-                    <h3>Web App Engineer</h3>
-                    <p>Shibuya, Tokyo, Japan</p>
+                    <h3>Web Application Engineer</h3>
+                    <p class="timeline-place">Shibuya, Tokyo, Japan</p>
                     <ul>
-                        <li>Working...</li>
+                        <li>フルスタックエンジニアとして、主にPHPを用いたWebアプリケーションの設計・開発・保守を担当</li>
+                        <li>要件定義からリリース後の運用まで一貫して携わる</li>
                     </ul>
                 </div>
             </div>
@@ -82,7 +112,7 @@
                 <div class="timeline-date">2021 - 2025</div>
                 <div class="timeline-content">
                     <h3>University Student</h3>
-                    <p>Kansaigaidai University, Osaka, Japan</p>
+                    <p class="timeline-place">Kansai Gaidai University, Osaka, Japan</p>
                     <ul>
                         <li>家庭のフードロス対策となる在庫チェックアプリ開発をLaravelで開発</li>
                         <li>上記アプリをGoとReactでリファクタリングを行う</li>
@@ -94,55 +124,55 @@
     </section>
 
     <section id="works">
-        <h2>Works</h2>
+        <div class="section-header">
+            <span class="section-index">03</span>
+            <h2>Works</h2>
+        </div>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Smart Pantry ( Refactoring ) </h3>
-                <p>家庭用食材在庫管理アプリをGoとReactで作成しています。</p>
-                <p><a href="https://smartpantry.jp" class="project-links">こちら</a>からご利用いただけます。</p>
+                <h3>フルスタックWebアプリ開発</h3>
+                <p>API設計からフロントエンド実装、DB設計までを一人で担当。個人開発を通じてバックエンドとフロントエンド双方の実装経験を積んでいます。</p>
                 <div class="project-tech">
-                    <span class="tech-tag">Go</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Docker</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">Nginx</span>
+                    <span>Go</span>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>MySQL</span>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Smart Pantry</h3>
-                <p>家庭用食材在庫管理アプリをLaravelで作成ました。</p>
+                <h3>サーバーサイド開発</h3>
+                <p>Laravelを用いたWebアプリケーションを複数個人開発。要件定義から実装まで一貫して担当し、CRUDやDB設計、認証まわりの実装経験を重ねています。</p>
                 <div class="project-tech">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">Laravel</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">Nginx</span>
-                    <span class="tech-tag">Docker</span>
+                    <span>PHP</span>
+                    <span>Laravel</span>
+                    <span>MySQL</span>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Share Playlists</h3>
-                <p>音楽プラットフォームによらないプレイリストが作成できます。</p>
+                <h3>インフラ・環境構築</h3>
+                <p>個人開発における環境構築を通じて、Dockerによるコンテナ化やNginxでの配信設定、CI/CDパイプラインの構築などインフラ領域にも取り組んでいます。</p>
                 <div class="project-tech">
-                    <span class="tech-tag">PHP</span>
-                    <span class="tech-tag">Laravel</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">Nginx</span>
-                    <span class="tech-tag">Docker</span>
+                    <span>Docker</span>
+                    <span>Nginx</span>
+                    <span>AWS</span>
+                    <span>CI / CD</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
+        <div class="section-header">
+            <span class="section-index">04</span>
+            <h2>Contact</h2>
+        </div>
         <p>案件のご依頼や相談等、お気軽にご連絡ください。</p>
         <a href="mailto:sora0613.contact@gmail.com" class="btn">Contact Me</a>
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2024 Sora. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Sora. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
