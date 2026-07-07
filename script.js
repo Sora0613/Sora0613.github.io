@@ -10,10 +10,6 @@ function getFooterYear(date = new Date()) {
     return date.getFullYear();
 }
 
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { getNextTheme, resolveInitialTheme, getFooterYear };
-}
-
 function readStoredTheme() {
     try {
         return localStorage.getItem('theme');
@@ -36,30 +32,20 @@ if (typeof document !== 'undefined') {
         const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
         if (themeToggle) {
-            function updateThemeToggleIcon(theme) {
-                const icon = themeToggle.querySelector('i');
-                if (icon) {
-                    icon.className = theme === 'dark' ? 'far fa-sun' : 'far fa-moon';
-                }
-            }
-
             function setTheme(theme) {
                 document.body.classList.toggle('dark-mode', theme === 'dark');
                 storeTheme(theme);
-                updateThemeToggleIcon(theme);
             }
 
-            // Check for saved theme preference or use the system preference
             setTheme(resolveInitialTheme(readStoredTheme(), prefersDarkScheme.matches));
 
-            // Theme toggle button event listener
             themeToggle.addEventListener('click', () => {
                 const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
                 setTheme(getNextTheme(currentTheme));
             });
         }
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for in-page anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const target = document.querySelector(this.getAttribute('href'));
